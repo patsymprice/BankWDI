@@ -5,6 +5,13 @@ $(document).ready(function(){
 	var checking = 1000;
 	var savings = 2300;
 
+$("#checking_results").text(currency("$", checking));
+$("#savings_results").text(currency("$", savings));
+
+$('#withdraw').on('click', withdrawChecking);
+$('#deposit').on('click', depositChecking);
+$('#deposit2').on('click', depositSavings);
+$('#withdraw2').on('click', withdrawSavings);
 
 
 function currency(sSymbol, vValue) {
@@ -84,14 +91,7 @@ function withdrawSavings(event){
 		event.preventDefault();
 }
 
-   $("#checking_results").text(currency("$", checking));
-   $("#savings_results").text(currency("$", savings));
-
-   $('#withdraw').on('click', withdrawChecking);
-   $('#deposit').on('click', depositChecking);
-   $('#deposit2').on('click', depositSavings);
-   $('#withdraw2').on('click', withdrawSavings);
-
+   
 });
 
 
