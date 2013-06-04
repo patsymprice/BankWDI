@@ -1,0 +1,44 @@
+body {
+	font-family: Tahoma, Verdana, Segoe, sans-serif;
+	margin: auto;
+	width: 800px;
+	margin: none;
+	background: url('../img/green.jpeg') no-repeat center center fixed;
+/* the follow is the code to have the image display as a full page */
+	-webkit-background-size: cover; /* the next 3 lines are "browser prefixes", they are necessary to include for CSS3 techniques */
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	color: green;
+}
+
+}
+
+
+h1 {
+	clear:float;
+	padding: 20px;
+	color: blue;
+}
+
+#checking, #savings {
+	float:left;
+	padding-right: 20px;
+	background-color: #acacac;
+	padding: 20px;
+	outline-style: groove;
+	outline-width: thick;
+	outline-color: blue;
+}
+
+
+#zero{
+	display: none;
+	color: red;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+
